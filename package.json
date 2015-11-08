@@ -1,0 +1,31 @@
+{
+  "name": "babel-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "start": "npm run build -s && node lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nik Butenko <nik@butenko.me> (http://butenko.me/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.0.20",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.0.18",
+    "babel-plugin-transform-object-rest-spread": "^6.0.14",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-types": "^6.0.19"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "plugins": [
+      "transform-es2015-modules-commonjs",
+      "transform-object-rest-spread"
+    ]
+  }
+}
